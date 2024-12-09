@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+  <Transaction TrainingModeFlag="false" OfflineFlag="false" TransactionModifiedFlag="false" EMVDebugFlag="false" MajorVersion="6" MinorVersion="0" FixVersion="0" VATReceiptFlag="false" CODFlag="false">
+    <BusinessUnit>
+      <UnitID TypeCode="RetailStore">3050</UnitID>
+    </BusinessUnit>
+    <Channel>
+      <ChannelID>STORE</ChannelID>
+      <TouchPointID ManagedTypeCode="90">POS</TouchPointID>
+    </Channel>
+    <WorkstationID WorkstationLocation="301">811</WorkstationID>
+    <SequenceNumber>106</SequenceNumber>
+    <OperatorID OperatorType="Cashier">097928</OperatorID>
+    <RetailTransaction TypeCode="Transaction" TransactionStatus="Finished" OutsideSalesFlag="false">
+      <LineItem EntryMethod="scanned" CancelFlag="false">
+        <Sale ItemType="Stock" ItemSubType="x:ORI3">
+          <ItemID Name="SKU" Type="SKU">91898132</ItemID>
+          <ItemID Name="Codabar" Type="SKU">2069918981328</ItemID>
+          <MerchandiseHierarchy Level="Group">524</MerchandiseHierarchy>
+          <MerchandiseHierarchy Level="Department" ID="ORCS">6719</MerchandiseHierarchy>
+          <POSIdentity>
+            <POSItemID>0098399467436</POSItemID>
+            <Qualifier>1</Qualifier>
+          </POSIdentity>
+          <ActualSalesUnitPrice>17.46</ActualSalesUnitPrice>
+          <ExtendedAmount>17.46</ExtendedAmount>
+          <ExtendedDiscountAmount>17.46</ExtendedDiscountAmount>
+          <Quantity UnitOfMeasureCode="EA">1</Quantity>
+          <RetailPriceModifier DiscountBenefit="Customer" MethodCode="PriceRule">
+            <SequenceNumber>1</SequenceNumber>
+            <ReasonCode>LREM43</ReasonCode>
+            <PriceDerivationRule IncludedInBestDealFlag="false" AdvancePriceRuleFlag="false" AccountingType="Markdown">
+              <ReasonCode>757603</ReasonCode>
+              <PriceDerivationRuleID>7576</PriceDerivationRuleID>
+              <Amount Action="Subtract">7.49</Amount>
+              <Percent Action="Subtract">30.02</Percent>
+            </PriceDerivationRule>
+          </RetailPriceModifier>
+          <Associate CommissionGivenFlag="false">
+            <AssociateID>097928</AssociateID>
+          </Associate>
+          <Tax TaxType="VAT" TaxAtSource="TaxedAtOrigin" NormalTaxType="Normal">
+            <Amount>2.91</Amount>
+            <Percent>20.00</Percent>
+          </Tax>
+          <SellingLocation Level="x:ZONE">301</SellingLocation>
+        </Sale>
+        <SequenceNumber>1</SequenceNumber>
+      </LineItem>
+      <LineItem CancelFlag="false">
+        <Tender TypeCode="Sale">
+          <Amount>17.46</Amount>
+          <TenderID TenderType="CASH">1000</TenderID>
+        </Tender>
+        <SequenceNumber>2</SequenceNumber>
+      </LineItem>
+      <Total TotalType="TransactionGrandAmount" Type="Actual" HALOFlag="false">17.46</Total>
+      <RestrictionValidation CustomerQuestionID="x:Codepostal">
+        <QuestionText>[Si le client habite en France] 
+Quel est votre code postal ?</QuestionText>
+        <QuestionAnswer/>
+      </RestrictionValidation>
+      <RestrictionValidation CustomerQuestionID="x:PAYS">
+        <QuestionText>Quel est votre pays de résidence ?</QuestionText>
+        <QuestionAnswer>FRA</QuestionAnswer>
+      </RestrictionValidation>
+    </RetailTransaction>
+    <EndDateTime>2024-10-29T17:02:49</EndDateTime>
+  </Transaction>
+</POSLog>

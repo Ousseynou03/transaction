@@ -19,8 +19,8 @@ class TransactionLoadTest extends Simulation {
   val databaseUser = "your_username"
   val databasePassword = "your_password"
   val txDate = System.getProperty("tx_date", LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")))
-  val transactionsDir = "data/transactions"
-  val lastFilePath = s"$transactionsDir/dernier_fichier.xml"
+  val transactionsDir = "src/test/resources/data/transaction"
+  val lastFilePath = s"$transactionsDir/file_158249.xml"
 
   // Date et heure de début de l'injection
   val injectionStartTime = LocalDateTime.now()

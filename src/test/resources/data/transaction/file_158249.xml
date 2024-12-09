@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+  <Transaction TrainingModeFlag="false" OfflineFlag="false" TransactionModifiedFlag="false" EMVDebugFlag="false" MajorVersion="6" MinorVersion="0" FixVersion="0" VATReceiptFlag="false" CODFlag="false">
+    <BusinessUnit>
+      <UnitID TypeCode="RetailStore">3010</UnitID>
+    </BusinessUnit>
+    <Channel>
+      <ChannelID>FOODSERVICE</ChannelID>
+      <TouchPointID ManagedTypeCode="103">POS</TouchPointID>
+    </Channel>
+    <WorkstationID WorkstationLocation="">102</WorkstationID>
+    <SequenceNumber>406</SequenceNumber>
+    <OperatorID OperatorType="Cashier">158609</OperatorID>
+    <RetailTransaction TypeCode="Transaction" TransactionStatus="Finished" OutsideSalesFlag="false">
+      <LineItem EntryMethod="scanned" CancelFlag="false">
+        <Sale ItemType="Stock" ItemSubType="x:ORI3">
+          <ItemID Name="SKU" Type="SKU">89344826</ItemID>
+          <ItemID Name="Codabar" Type="SKU">2069893448267</ItemID>
+          <MerchandiseHierarchy Level="Group"/>
+          <MerchandiseHierarchy Level="Department" ID="ORCS">5280</MerchandiseHierarchy>
+          <POSIdentity>
+            <POSItemID>8009344100331</POSItemID>
+            <Qualifier>2</Qualifier>
+          </POSIdentity>
+          <ActualSalesUnitPrice UnitOfMeasureCode="EA">4.70</ActualSalesUnitPrice>
+          <ExtendedAmount>4.70</ExtendedAmount>
+          <ExtendedDiscountAmount>4.70</ExtendedDiscountAmount>
+          <Quantity Units="1" UnitOfMeasureCode="EA">1.00000</Quantity>
+          <Associate CommissionGivenFlag="false">
+            <AssociateID>158609</AssociateID>
+          </Associate>
+          <Tax TaxType="VAT" TaxAtSource="TaxedAtOrigin" NormalTaxType="Normal">
+            <Amount>0.25</Amount>
+            <Percent>5.50</Percent>
+          </Tax>
+        </Sale>
+        <SequenceNumber>1</SequenceNumber>
+      </LineItem>
+      <LineItem CancelFlag="false">
+        <Tender TypeCode="Sale">
+          <Amount>4.7</Amount>
+          <Authorization>
+            <AuthorizationCode>A  270723</AuthorizationCode>
+            <ReferenceNumber>010217299685920520003883010</ReferenceNumber>
+            <AuthorizingTermID>102</AuthorizingTermID>
+            <ProviderID>7572950262100428142</ProviderID>
+            <EMVDebug>
+              <CardholderVerificationMethodResults>C</CardholderVerificationMethodResults>
+              <IssuerApplicationData>724</IssuerApplicationData>
+              <TerminalVerificationResults>M1R</TerminalVerificationResults>
+            </EMVDebug>
+          </Authorization>
+          <CreditDebit>
+            <IssuerIdentificationNumber>1</IssuerIdentificationNumber>
+            <PrimaryAccountNumber>5498000000000008812</PrimaryAccountNumber>
+            <ExpirationDate>2027-08</ExpirationDate>
+            <CreditCardCompanyCode>J</CreditCardCompanyCode>
+            <Track1Data>3C89A12D176EF674AA7B388ABD352CFC388ABFCA195C324A604842EA04040404</Track1Data>
+            <ReconciliationCode/>
+            <NumberOfInstallments/>
+          </CreditDebit>
+          <TenderID TenderType="CCARD">3340</TenderID>
+        </Tender>
+        <SequenceNumber>2</SequenceNumber>
+      </LineItem>
+      <Total TotalType="TransactionGrandAmount" Type="Actual" HALOFlag="false">4.7</Total>
+    </RetailTransaction>
+    <EndDateTime>2024-10-29T20:50:01</EndDateTime>
+  </Transaction>
+</POSLog>
